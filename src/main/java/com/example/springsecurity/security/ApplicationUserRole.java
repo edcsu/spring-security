@@ -15,4 +15,8 @@ public enum ApplicationUserRole {
     }
 
     private final Set<ApplicationUserPermission> permissions;
+
+    public Set<ApplicationUserPermission> getPermissions() {
+        return permissions;
+    }
 }
