@@ -8,8 +8,8 @@ import java.util.Set;
 
 public class ApplicationUser implements UserDetails {
 
-    private final  String password;
-    private final  String username;
+    private final String username;
+    private final String password;
     private final Set<? extends GrantedAuthority> grantedAuthorities;
     private final boolean isAccountNonExpired;
     private final boolean isAccountNonLocked;
@@ -17,8 +17,8 @@ public class ApplicationUser implements UserDetails {
     private final boolean isEnabled;
 
     public ApplicationUser(
-                           String password,
                            String username,
+                           String password,
                            Set<? extends GrantedAuthority> grantedAuthorities,
                            boolean isAccountNonExpired,
                            boolean isAccountNonLocked,
